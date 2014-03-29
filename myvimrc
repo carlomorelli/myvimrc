@@ -1,0 +1,41 @@
+" ---- main configuration ---- 
+" run pathogen, the plugin manager script
+call pathogen#infect()
+
+" base vim-nox .vimrc
+syntax on
+filetype plugin indent on
+
+" show line numbering 
+set number
+
+" set max line width and autoformat
+set columns=79
+set formatoptions+=a
+
+" enable autoindent with width 4 spaces
+set autoindent
+set shiftwidth=4
+
+" highlight search items and show them as you type
+set hlsearch
+set incsearch
+
+" don't buffer or backup working files
+set nobackup
+set noswapfile
+
+" enable mouse
+set mouse=a
+
+" ---- pathogen plugins configuration ----
+" set colorscheme solarized (use 'dark' or 'light')
+syntax enable
+set t_Co=16
+set background=dark
+colorscheme solarized
+
+" run NERDTree at startup if !argc()
+autocmd vimenter * if !argc() | NERDTree | endif
+
+
