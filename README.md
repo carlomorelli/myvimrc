@@ -4,8 +4,17 @@ Vim 7.4.
 Usage: after git clone, physically copy the file "myvimrc" in the home dir and
 rename it ".vimrc", or symlink it.
 
+Tested with:
+ - Debian Jessie (warning: vim-nox package is needed)
+ - Cygwin
+
 
 [[[[[Changelog]]]]]
+
+Version 1.0.1
+- Fixed backspace bahaviour
+- Commented out autoformat option (problematic)
+
 
 Version 1.0
 - Initial commit

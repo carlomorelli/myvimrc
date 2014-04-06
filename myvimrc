@@ -1,3 +1,9 @@
+" (c) 2014 by Carlo Morelli
+" Distribuited under free license:
+" /copy, paste and test at your will!/
+" ... and let me know if you find any enhancements!
+"
+
 " ---- main configuration ---- 
 " run pathogen, the plugin manager script
 call pathogen#infect()
@@ -11,7 +17,9 @@ set number
 
 " set max line width and autoformat
 set columns=79
-set formatoptions+=a
+
+" set autoformat (I comment this out, it's problematic)
+"set formatoptions+=a
 
 " enable autoindent with width 4 spaces
 set autoindent
@@ -27,6 +35,9 @@ set noswapfile
 
 " enable mouse
 set mouse=a
+
+" fix backspace
+set bs=2
 
 " ---- pathogen plugins configuration ----
 " set colorscheme solarized (use 'dark' or 'light')
