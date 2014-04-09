@@ -6,7 +6,7 @@
 
 " ---- main configuration ---- 
 " run pathogen, the plugin manager script
-call pathogen#infect()
+execute pathogen#infect()
 
 " base vim-nox .vimrc
 syntax on
@@ -15,10 +15,14 @@ filetype plugin indent on
 " show line numbering 
 set number
 
-" set max line width and autoformat
+" set max line width
 set columns=79
+set colorcolumn=80
 
-" set autoformat (I comment this out, it's problematic)
+" do not resize terminal when launching vim (TODO: doesn't work)
+let Tlist_Inc_Winwidth=0
+
+" set autoformat (TODO: doesn't work, commented out)
 "set formatoptions+=a
 
 " enable autoindent with width 4 spaces
@@ -40,7 +44,7 @@ set mouse=a
 set bs=2
 
 " ---- pathogen plugins configuration ----
-" set colorscheme solarized (use 'dark' or 'light')
+" for using colorscheme solarized (use 'dark' or 'light')
 syntax enable
 set t_Co=16
 set background=dark
@@ -49,4 +53,5 @@ colorscheme solarized
 " run NERDTree at startup if !argc()
 autocmd vimenter * if !argc() | NERDTree | endif
 
-
+" run airline at startup always (default is, only when a split pane appears
+set laststatus=2
