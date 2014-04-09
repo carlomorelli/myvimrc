@@ -11,6 +11,16 @@ Tested with:
 
 [[[[[Changelog]]]]]
 
+
+Version 1.0.3
+- Tested airline plugin on Debian Jessie
+
+
+Version 1.0.2
+- Various To-dos
+- Tested airline plugin on Cygwin
+
+
 Version 1.0.1
 - Fixed backspace bahaviour
 - Commented out autoformat option (problematic)
